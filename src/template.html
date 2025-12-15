@@ -10,8 +10,22 @@
     <div class="container">
       <div class="project-div">
         <h2>Projects</h2>
-        <div></div>
-        <button>+Add Project</button>
+        <button id="new-project">+Add Project</button>
+        <dialog id="project-dialog">
+          <h2>New Project</h2>
+          <form>
+            <label for="input-project">Project name</label>
+            <input
+              type="text"
+              name="input-project"
+              id="input-project"
+              required
+            />
+          </form>
+          <button type="submit" id="submit-btn">Create Project</button>
+          <button id="close-btn">Close</button>
+        </dialog>
+        <div class="project-list"></div>
       </div>
       <div class="preview">preview</div>
     </div>
